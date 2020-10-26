@@ -1,22 +1,22 @@
 
 var nodemailer = require("nodemailer");
-function mail(){
+function mail(service,user,password,reciever,subject,text){
 
 
 var smtpTransport = nodemailer.createTransport({
-        service: 'Gmail', 
+        service: service, 
         auth: {
-          user: 'complaint.prankcord@gmail.com',
+          user:user,
 			
-          pass: 'prank123@'
+          pass: password
         }
       });
 	
 		 var mailOptions = {
-      from: 'mail.pushkar2020@gmail.com',
-      to:"pushkarmaurya20052001@gmail.com" ,
-      subject:"",
-      text:""
+      from: user,
+      to:reciever,
+      subject:subject,
+			 text:text
     };
      smtpTransport.sendMail(mailOptions, function(error, info) {
       if (error) {
