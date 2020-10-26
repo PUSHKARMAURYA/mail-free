@@ -1,5 +1,7 @@
 # mail-free
 
+[![Rate on Openbase](https://badges.openbase.io/js/rating/mail-free.svg)](https://openbase.io/js/mail-free?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+
 > Send  emails free and easy.
 
 mail-freeis an email package  that let's send emails any number of times and any numbber of pepole.
@@ -7,7 +9,7 @@ mail-freeis an email package  that let's send emails any number of times and any
 
 
 ### Install NPM dependency
-```
+```javascript
 npm install --save mail-free
 ```
 ### Include
@@ -48,7 +50,7 @@ mail.mail('reciever@gmail.com',"Hello","How its going");
 ```
 Use :
 
-    service: 'gmail',
+    service: 'Gmail',
 
 Goto : 
 
@@ -69,7 +71,7 @@ Goto :
 ### Yahoo
 ```Use :
 
-    service: 'yahoo',
+    service: 'Yahoo',
 
 Goto : 
 
@@ -79,3 +81,19 @@ Enable :
 
     Allow apps that use less secure sign in
 ```
+# Contribution
+
+Very much appreciate any types of donation and support. 
+
+## Code
+
+`excel-mongodb` follows github convention for contributions. Here are some steps:
+
+1. Fork the repo to your github account
+2. Checkout code from your github repo to your local machine.
+3. Make code changes and don't forget add related tests.
+4. Run `npm test` locally before pushing code back.
+5. Create a [Pull Request](https://help.github.com/articles/creating-a-pull-request/) on github.
+6. Code review and merge
+7. Changes will be published to NPM within next version.
+
