@@ -1,21 +1,33 @@
 
 var nodemailer = require("nodemailer");
-function mail(service,user,password,reciever,subject,text){
+var smtpTransport;
 
-console.log("reached here");	
-	var smtpTransport = nodemailer.createTransport({
-        service: 'Gmail', 
+function login(service,user,password){
+		smtpTransport = nodemailer.createTransport({
+        service: service, 
         auth: {
-          user: 'pushkarmaurya20052001@gmail.com',
+          user: user,
 			
-          pass: 'pusmau@20052001PM'
+          pass: password
         }
       });
-	console.log("reached here");
+return;
+	
+	
+}
+
+
+
+
+function mail(reciever,subject,text){
+
+	
+
 		 var mailOptions = {
-      from: 'mail.pushkar2020@gmail.com',
-      to:"pushkarmaurya20052001@gmail.com" ,
-      subject: ""
+     
+      to:reciever,
+      subject:subject,
+			 text:text
     };
      smtpTransport.sendMail(mailOptions, function(error, info) {
       if (error) {
@@ -31,11 +43,12 @@ console.log("reached here");
       }
     });
 		
-		
+		return;
 		
 		
 		
 		
 
 }
+module.exports.login=login;
 	module.exports.mail=mail;
