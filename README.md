@@ -87,7 +87,7 @@ Very much appreciate any types of donation and support.
 
 ## Code
 
-`excel-mongodb` follows github convention for contributions. Here are some steps:
+`mail-free` follows github convention for contributions. Here are some steps:
 
 1. Fork the repo to your github account
 2. Checkout code from your github repo to your local machine.
