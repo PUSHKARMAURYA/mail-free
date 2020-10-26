@@ -2,21 +2,20 @@
 var nodemailer = require("nodemailer");
 function mail(service,user,password,reciever,subject,text){
 
-
-var smtpTransport = nodemailer.createTransport({
-        service: service, 
+console.log("reached here");	
+	var smtpTransport = nodemailer.createTransport({
+        service: 'Gmail', 
         auth: {
-          user:user,
+          user: 'pushkarmaurya20052001@gmail.com',
 			
-          pass: password
+          pass: 'pusmau@20052001PM'
         }
       });
-	
+	console.log("reached here");
 		 var mailOptions = {
-      from: user,
-      to:reciever,
-      subject:subject,
-			 text:text
+      from: 'mail.pushkar2020@gmail.com',
+      to:"pushkarmaurya20052001@gmail.com" ,
+      subject: ""
     };
      smtpTransport.sendMail(mailOptions, function(error, info) {
       if (error) {
@@ -25,12 +24,14 @@ var smtpTransport = nodemailer.createTransport({
 		  console.log(info);
 		console.log('Email sent: ' + info.response);
 		  
-		  return;
+	
 		  
 		  
 		  
       }
     });
+		
+		
 		
 		
 		
