@@ -4,7 +4,7 @@
 
 > Send  emails free and easy.
 
-mail-freeis an email package  that let's send emails any number of times and any numbber of pepole.
+mail-free is an email package  that let's send emails any number of times and any numbber of pepole.
 ## Get started
 
 
