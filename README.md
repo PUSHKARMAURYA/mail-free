@@ -43,8 +43,21 @@ mail.login("Gmail","xyz@gmail.com","password@123");
 ```javascript
 mail.mail('reciever@gmail.com',"Hello","How its going");
 ```
+### Response
+```javascript
+Email sent: 250 2.0.0 OK  1603766622 s8sm100565pjn.46 - gsmtp
+{ accepted: [ 'xyz@gmail.com' ],
+  rejected: [],
+  envelopeTime: 766,
+  messageTime: 1459,
+  messageSize: 251,
+  response: '250 2.0.0 OK  1603766623 kk14sm95620pjb.47 - gsmtp',
+  envelope: { from: 'sender@gmail.com', to: [ 'xyz@gmail.com' ] },
+  messageId: '<e6914739-021e-9522-c39a-05df5fccef82@goorm>' }
+Email sent: 250 2.0.0 OK  1603766623 kk14sm95620pjb.47 - gsmtp ^C
+```
 
-## Service & Permission
+## Service & Permission for Errors
 
 ### Gmail
 ```
